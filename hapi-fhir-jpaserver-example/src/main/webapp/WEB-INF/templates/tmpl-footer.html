@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<div th:fragment="footer">
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		  ga('create', 'UA-1395874-6', 'auto');
-		  ga('require', 'displayfeatures');
-		  ga('require', 'linkid', 'linkid.js');
-		  ga('send', 'pageview');		
-		</script>
-	</div>
+    <div th:fragment="footer" align="left" 
+        style="border-style: solid none none; 
+        border-width: 1px; 
+        margin-top: 50px;
+        padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+        <div th:block >
+        <p><small>
+            HL7, FHIR, and the FHIR [FLAME DESIGN] are the registered trademarks of 
+            Health Level Seven International.
+        </small></p>
+        <p><small>
+            National Marrow Donor Program - 
+            Entrusted to operate the <a href="http://bloodcell.transplant.hrsa.gov/ABOUT/Contractors/index.html">
+            C.W. Bill Young Cell Transplantation Program</a>, including Be The Match Registry®. <br />
+            Copyright &#169; 2016 National Marrow Donor Program. All Rights Reserved.
+            <a href="https://bethematchclinical.org/about-us/terms-of-use/">Terms of Use</a> |
+            <a href="https://bethematchclinical.org/about-us/privacy-policy/">Privacy Policy</a> |
+            <a href="https://bethematchclinical.org/about-us/trademark-and-copyright/">Trademark and Copyright</a> 
+        </small></p>
+        </div>
+        <!--
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-1395874-6', 'auto');
+          ga('require', 'displayfeatures');
+          ga('require', 'linkid', 'linkid.js');
+          ga('send', 'pageview');       
+        </script>
+        -->
+    </div>
 </html>

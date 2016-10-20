@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<div th:fragment="banner">
+    <div class="row">
+        <div class="col-md-8">
+            <!-- 
+            <img src="img/hapi_fhir_banner.png" />
+            -->
+            <a href="http://bethematchclinical.org"><img style="height: 90px; vertical-align= middle; float: left; " src="img/nmdp_btm.png" /></a>
+        </div>
+        <div class="col-md-4">
+            <!--
+            <img src="img/hapi_fhir_banner_right.png" align="right" />
+            -->
+            <a href="http://www.hl7.org/fhir/"><img style="height: 60px; vertical-align= middle; float: right;" src="img/nmdp_fhir.png" /></a>
+            <a href="http://hapifhir.io/"><img style="height: 60px; vertical-align= middle; float: right;" src="img/hapi_fhir_banner_narrow.png" /></a>
+        </div>
+    </div>
+    
+    <!-- Error banner in case anything went wrong -->   
+    <div class="alert  alert-danger alert-dismissable" th:if="${errorMsg} != null">
+        <strong>Warning!</strong>
+        <p th:text="${errorMsg}"></p>
+    </div>
+    
+</div>
+</html>
