@@ -803,7 +803,7 @@
         <jaxb_bundle_version>2.2.11_1</jaxb_bundle_version>
         <jaxb_api_version>2.3.1</jaxb_api_version>
         <jaxb_core_version>2.3.0.1</jaxb_core_version>
-        <jaxb_runtime_version>3.0.0</jaxb_runtime_version>
+        <jaxb_runtime_version>4.0.1</jaxb_runtime_version>
         <jena_version>4.2.0</jena_version>
         <jersey_version>3.0.3</jersey_version>
         <jetty_version>9.4.48.v20220622</jetty_version>
